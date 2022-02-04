@@ -12,6 +12,7 @@ RUN apt-get update && \
     rm -rf /var/cache/apt/* && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* && \
+    pip install black && \
     pip install dbt-snowflake
 
 # Copy exercices content into the image
