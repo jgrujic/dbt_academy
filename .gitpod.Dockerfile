@@ -11,9 +11,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/cache/apt/* && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/* && \
-    pip install black && \
-    pip install dbt-snowflake
+    rm -rf /tmp/* 
 
 # Copy exercices content into the image
 # COPY --chown=gitpod content/ /home/gitpod/dbt_audiance_measurment
